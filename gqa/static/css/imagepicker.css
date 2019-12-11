@@ -1,0 +1,48 @@
+.big-image {
+    width:500px;
+    height:500px;
+    position:relative;
+    margin:0.25em;
+  }
+  
+  
+  .thumb-images {
+    position:relative;
+    width:500px;
+  }
+  .thumbs {
+    margin:0.25em;
+    width:500px;
+    overflow-x:auto;
+    white-space:nowrap;
+  }
+  .thumb-images img {
+    width:70px;
+    box-sizing:border-box;
+  }
+  .thumb-images img.active {
+    border:1px solid black;
+  }
+  
+  .arrow {
+    position:absolute;
+    bottom:50%;
+    transform:translateY(50%);
+    color:white;
+  }
+  .arrow.right {
+    right:1em;
+  }
+  .arrow.left {
+    left:1em;
+  }
+  
+  
+  
+  
+  
+  @media (max-width:500px) {
+    .thumb-images .arrow {
+      display:none;
+    }
+  }
